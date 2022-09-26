@@ -7,26 +7,7 @@ export default {
   state() {
     return {
       lastFetch: null,
-      coaches: [
-        {
-          id: 'c1',
-          firstName: 'Denis',
-          lastName: 'Back',
-          areas: ['frontend', 'backend', 'career'],
-          description:
-            "I'm Denis and I've worked as a freelance web developer for years",
-          hourlyRate: 35,
-        },
-        {
-          id: 'c2',
-          firstName: 'Julie',
-          lastName: 'Front',
-          areas: ['frontend', 'career'],
-          description:
-            'I am Julie and as a senior developer in a big tech company, I can help you progress in your current role',
-          hourlyRate: 30,
-        },
-      ],
+      coaches: [],
     };
   },
   mutations,
