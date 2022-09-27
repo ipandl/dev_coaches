@@ -1,6 +1,7 @@
 export default {
   async registerCoach(context, data) {
     const userId = context.rootGetters.userId;
+    const token = context.rootGetters.token;
     const coachData = {
       firstName: data.first,
       lastName: data.last,
@@ -10,7 +11,7 @@ export default {
     };
 
     const response = await fetch(
-      `https://dev-coaches-default-rtdb.europe-west1.firebasedatabase.app/coaches/${userId}.json`,
+      `https://dev-coaches-default-rtdb.europe-west1.firebasedatabase.app/coaches/${userId}.json?auth=${token}`,
       {
         method: 'PUT',
         body: JSON.stringify(coachData),
