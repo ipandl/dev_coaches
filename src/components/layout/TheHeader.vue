@@ -3,7 +3,7 @@
     <nav>
       <h1><router-link to="/">Vue.js demo - Find a Coach</router-link></h1>
       <ul>
-        <li><router-link to="/coaches">All DEV Coaches</router-link></li>
+        <li><router-link to="/coaches">All Coaches</router-link></li>
         <li v-if="isLoggedIn">
           <router-link to="/requests">Requests</router-link>
         </li>

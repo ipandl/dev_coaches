@@ -19,13 +19,13 @@
             >Refresh</base-button
           >
           <base-button v-if="!isLoggedIn" link to="/auth?redirect=register"
-            >Login to regsiter as Coach</base-button
+            >Login to register as a Coach</base-button
           >
           <base-button
             v-if="isLoggedIn && !isCoach && !isLoading"
             link
             to="/register"
-            >Register as Coach</base-button
+            >Register as a Coach</base-button
           >
         </div>
         <div v-if="isLoading">
@@ -42,7 +42,7 @@
             :areas="coach.areas"
           ></coach-item>
         </ul>
-        <h3 v-else>No coaches found.</h3>
+        <h3 v-else>No Coaches found</h3>
       </base-card>
     </section>
   </div>
