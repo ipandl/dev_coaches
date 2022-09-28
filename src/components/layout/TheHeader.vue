@@ -38,7 +38,18 @@ export default {
 header {
   width: 100%;
   height: 5rem;
-  background-color: #3d008d;
+  background: #ad5389; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #3c1053,
+    #ad5389
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #3c1053,
+    #ad5389
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   display: flex;
   justify-content: center;
   align-items: center;

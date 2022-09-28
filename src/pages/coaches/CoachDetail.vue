@@ -51,7 +51,7 @@ export default {
       return this.selectedCoach.description;
     },
     contactLink() {
-      return `${this.$route.path}/contact`;
+      return `${this.$route.path.replace('/contact', '')}/contact`;
     },
   },
   created() {
