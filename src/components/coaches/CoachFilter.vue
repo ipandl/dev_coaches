@@ -24,7 +24,7 @@ export default {
       filters: {
         frontend: true,
         backend: true,
-        carrer: true,
+        career: true,
       },
     };
   },
